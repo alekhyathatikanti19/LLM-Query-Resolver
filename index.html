@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>questionandanswer</title>
+</head>
+<body>
+<center>
+    <table>
+        <tr> <td><center><h3>Question And Answer</h3></center></td></tr>
+        <br>
+        <br>
+        <br>
+<form action="./predict" method="post">
+        <tr>
+            <td><label for="textbox">Enter your Question</label></td>
+        </tr>
+    <tr>
+       <td>
+                <textarea id="textbox" name="textbox" rows="5" cols="150" placeholder="Please Paste or Enter your Question......"></textarea><br>
+            </td>
+    </tr>
+       <tr>
+            <td colspan="5"><input id="btn" type="submit" value="Find Answer" /></td>
+        </tr><br>
+       <tr>
+            <td colspan="50" rowspan="100"><p>Answer:{{prog}}</p></td>
+        </tr><br><br>
+</form>
+            </table>
+</center>
+</body>
+</html>
